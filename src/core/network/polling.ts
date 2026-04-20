@@ -18,7 +18,7 @@ export class Polling {
     constructor(
         private readonly telegram: ApiClient,
         private readonly allowedUpdates: readonly tt.UpdateType[]
-    ) { }
+    ) {}
 
     private async *[Symbol.asyncIterator]() {
         debug('Starting long polling')
